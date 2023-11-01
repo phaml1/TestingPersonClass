@@ -8,12 +8,15 @@ public class Person {
     private int age;
 
     public Person() {
+
     }
 
     public Person(int age) {
+        this.age = age;
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
     public Person(String name, int age) {
@@ -26,10 +29,12 @@ public class Person {
     }
 
     public String getName() {
-        return null;
+        this.name = name;
+        return name;
     }
 
     public Integer getAge() {
-        return null;
+        this.age = age;
+        return age;
     }
 }
