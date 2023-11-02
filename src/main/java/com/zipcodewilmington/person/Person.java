@@ -7,7 +7,7 @@ public class Person {
     private String name;
     private int age;
     private int height;
-    private int weight;
+    private double weight;
 
     public Person() {
         this.name = "";
@@ -51,5 +51,15 @@ public class Person {
     }
     public Integer getHeight(){
        return height;
+    }
+
+    public Person(double weight){
+        this.weight = weight;
+    }
+    public void setWeight(double weight){
+        this.weight = weight;
+    }
+    public double getWeight(){
+        return weight;
     }
 }

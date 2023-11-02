@@ -112,4 +112,21 @@ public class TestPerson {
         Integer actual = person.getHeight();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetWeight(){
+        Person person = new Person();
+        Double expected = 178.2;
+        person.setWeight(expected);
+        Double actual = person.getWeight();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGetWeight(){
+        Double expected = 172.2;
+        Person person = new Person(expected);
+        Double actual = person.getWeight();
+        Assert.assertEquals(expected, actual);
+    }
 }
