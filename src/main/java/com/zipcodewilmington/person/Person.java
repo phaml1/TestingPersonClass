@@ -6,6 +6,8 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private int height;
+    private int weight;
 
     public Person() {
         this.name = "";
@@ -41,5 +43,13 @@ public class Person {
         return age;
     }
 
-    public
+    public Person(Integer height){
+        this.height = height;
+    }
+    public void setHeight(int height){
+        this.height = height;
+    }
+    public Integer getHeight(){
+       return height;
+    }
 }

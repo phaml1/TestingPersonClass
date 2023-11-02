@@ -95,4 +95,21 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetHeight(){
+        Person person = new Person();
+        Integer expected = 180;
+        person.setHeight(expected);
+        Integer actual = person.getHeight();
+        Assert.assertEquals(expected ,actual);
+    }
+
+    @Test
+    public void testGetHeight(){
+        Integer expected = 180;
+        Person person = new Person(expected);
+        Integer actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
 }
